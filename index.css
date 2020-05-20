@@ -137,6 +137,10 @@ button {
     align-items: flex-start;
 }
 
+.mobile-nav-list {
+    display: none;
+}
+
 @media (min-width: 768px) {
     .main-header li {
         float: left;
@@ -196,5 +200,9 @@ button {
 
     .nav-link {
         padding: 0.45rem 0.5rem !important;
+    }
+
+    .navbar {
+        background-color: #212529;
     }
 }

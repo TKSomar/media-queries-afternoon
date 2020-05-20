@@ -32,14 +32,42 @@ function scrollFunction() {
         </script>
 
 <script src="https://kit.fontawesome.com/e2ee4a69e1.js" crossorigin="anonymous"></script>
+
+<script>
+    function toggleMobileMenuList() {
+        var x = document.getElementById("mobile-list-items");
+        if (x.style.display === "none") {
+            x.style.display = "flex";
+            x.style.position = "absolute";
+            x.style.top = "15vh";
+            x.style.fontFamily = "'Montserrat', sans-serif";
+            x.style.backgroundColor = "#212529";
+            x.style.width = "100%";
+            x.style.alignContent = "flex-start";
+        } else {
+            x.style.display = "none";
+            x.style.flexDirection = "column";
+        }
+    }
+</script>
     </head>
     <body>
         
         <header class="main-header">
-            <nav class="navbar navbar-large fixed-top navbar-fixed-top mobile-nav" id="mainNav">
+            <nav class="navbar navbar-large fixed-top navbar-fixed-top" id="mainNav">
                 <img src="https://blackrockdigital.github.io/startbootstrap-agency/assets/img/navbar-logo.svg" class="logo-full" id="logo" />
-                <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">MENU <i class="fas fa-bars"></i></button>
-                <ul class="navbar-nav text-uppercase ml-auto mobile-menu">
+                <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleMobileMenuList()">MENU <i class="fas fa-bars"></i></button>
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="header-menu-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="header-menu-item"><a class="nav-link" href="#">Portfolio</a></li>
+                    <li class="header-menu-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="header-menu-item"><a class="nav-link" href="#">Team</a></li>
+                    <li class="header-menu-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <nav class="mobile-nav" id="mobile-navigation">
+                <ul class="navbar-nav text-uppercase ml-auto mobile-nav-list" id="mobile-list-items">
                     <li class="header-menu-item"><a class="nav-link" href="#">Services</a></li>
                     <li class="header-menu-item"><a class="nav-link" href="#">Portfolio</a></li>
                     <li class="header-menu-item"><a class="nav-link" href="#">About</a></li>
