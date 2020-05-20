@@ -1,0 +1,52 @@
+<!<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+        <script>
+            window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("mainNav").style.paddingTop = "1rem";
+    document.getElementById("mainNav").style.paddingBottom = "1rem";
+    document.getElementById("mainNav").style.backgroundColor = "#212529";
+    document.getElementById("logo").style.height = "1.5rem";
+  } else {
+    document.getElementById("mainNav").style.paddingTop = "1.5rem";
+    document.getElementById("mainNav").style.paddingBottom = "1.5rem";
+    document.getElementById("logo").style.height = "2rem";
+    document.getElementById("mainNav").style.backgroundColor = "transparent";
+  }
+}
+        </script>
+    </head>
+    <body>
+        
+        <header class="main-header">
+            <nav class="navbar navbar-large fixed-top navbar-fixed-top mobile-nav" id="mainNav">
+                <img src="https://blackrockdigital.github.io/startbootstrap-agency/assets/img/navbar-logo.svg" class="logo-full" id="logo" />
+                <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">MENU</button>
+                <ul class="navbar-nav text-uppercase ml-auto mobile-menu">
+                    <li class="header-menu-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="header-menu-item"><a class="nav-link" href="#">Portfolio</a></li>
+                    <li class="header-menu-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="header-menu-item"><a class="nav-link" href="#">Team</a></li>
+                    <li class="header-menu-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+    </body>
+</html>

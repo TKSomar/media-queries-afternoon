@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    height: 1500px;
+}
+
+#mainNav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: transparent;
+}
+
+#mainNav .navbar-nav .header-menu-item .nav-link {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.header-menu-item {
+    font-size: 0.95rem;
+    color: #fff;
+    letter-spacing: 0.0625em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: #fed136;
+    text-shadow: none;
+}
+
+nav {
+    display: block;
+}
+
+.navbar-nav {
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.ml-auto {
+    margin-left: auto !important;
+}
+
+.main-header {
+    text-align: center;
+    color: #fff;
+    background-image: url(https://blackrockdigital.github.io/startbootstrap-agency/assets/img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    height: 120vh;
+}
+
+#mainNav #logo {
+    transition: 0.5s;
+}
+
+#mainNav {
+    transition: 0.5s;
+}
+
+@media (min-width: 768px) {
+    .main-header li {
+        float: left;
+    }
+
+    .main-header li a {
+        padding: 20px 30px;
+    }
+
+    .main-header .mobile-menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .main-header .mobile-menu-button {
+        display: none;
+    }
+}
+
+#mainNav .navbar-toggler {
+    padding: 0.75rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #fed136;
+    border: 0;
+}
+
+.navbar-toggler:hover {
+    text-decoration: none;
+}
+
+.navbar-toggler {
+    line-height: 1;
+    border-radius: 0.25rem;
+}
+
+button, [type=button], [type-reset], [type=submit] {
+    -webkit-appearance: button;
+}
+
+button, input {
+    overflow: visible;
+    margin: 0;
+}
+
+button {
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+}
