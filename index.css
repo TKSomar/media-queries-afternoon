@@ -98,26 +98,6 @@ nav {
     transition: 0.5s;
 }
 
-@media (min-width: 768px) {
-    .main-header li {
-        float: left;
-    }
-
-    .main-header li a {
-        padding: 20px 30px;
-    }
-
-    .main-header .mobile-menu {
-        clear: none;
-        float: right;
-        max-height: none;
-    }
-
-    .main-header .mobile-menu-button {
-        display: none;
-    }
-}
-
 #mainNav .navbar-toggler {
     padding: 0.75rem;
     font-family: 'Montserrat', sans-serif;
@@ -155,4 +135,66 @@ button {
     display: inline-block;
     text-align: center;
     align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+    .main-header li {
+        float: left;
+    }
+
+    .main-header li a {
+        padding: 20px 30px;
+    }
+
+    .main-header .mobile-menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .main-header .mobile-menu-button {
+        display: none;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .button-toggler {
+        display: flex;
+    }
+
+    .navbar-nav {
+        display: none;
+    }
+
+    #logo {
+        height: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .button-toggler {
+        display: flex;
+    }
+
+    .navbar-nav {
+        display: none;
+    }
+
+    #logo {
+        height: 1.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    #logo {
+        height: 2rem !important;
+    }
+
+    .nav-link {
+        padding: 0.45rem 0.5rem !important;
+    }
 }
